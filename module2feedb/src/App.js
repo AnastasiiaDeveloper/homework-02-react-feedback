@@ -62,17 +62,17 @@ function Statistics(props) {
   )
 }
 
-function FeedbackOptions(props) {
-  return (
+const FeedbackOptions = props => 
+  (
     <div>
       <p>{props.title}</p>
       {props.options.map(option => <button onClick={option.onLeaveFeedback}>{option.title}</button>)}
     </div>
   )
-}
 
-function NotificationMessage(props) {
-  return (
+
+ const NotificationMessage = props => 
+  (
     <span>
       {
         props.total === 0 ?
@@ -87,6 +87,6 @@ function NotificationMessage(props) {
       }
     </span>
   )
-}
+
 
 export default App
